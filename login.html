@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginform</title>
+    <script src="./script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #898ae4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .user img {
+            size: 4px;
+        }
+
+
+        .form {
+            /* width: 350px; */
+            /* height: 400px; */
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 25px;
+            padding: 30px;
+            gap: 10px;
+            margin: 0px 36%;
+            background-image: url('./bgimage');
+
+        }
+
+        .filed {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+            border: 2px solid blueviolet;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(211, 236, 228);
+            font-weight: 700;
+        }
+        input:user-valid{
+            border: 2px solid blueviolet;
+
+        }
+        div.submit {
+            display: flex;
+            flex-direction: row;
+            border: none;
+            outline: none;
+            width: 100%;
+            /* color: #fff; */
+        }
+        button {
+            /* background-color: #898ae4; */
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.8;
+            padding: 5px 35px;
+            margin: 0px 5px;
+        }
+        #cls{
+            background-color: rgb(243, 81, 92);
+            color: #fff;
+            font-weight: 600;
+        }
+        #sub{
+            background-color: rgb(9, 25, 244);
+            color: #fff;
+            font-weight: 600;
+        }
+
+
+       
+        label {
+            color: #b31717;
+        }
+
+        button:hover {
+            opacity: 1.0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+
+        <div class="user">
+            <img src="./user.png" alt="userimage">
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type='text' placeholder="test@gmail.com">
+            <label>Password</label>
+            <input type='password' placeholder="********">
+
+        </div>
+        <div class="submit">
+            <button id="cls">clear</button>
+            <button id="sub">submit</button>
+            <!-- <input type="submit" id="submit"> -->
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
